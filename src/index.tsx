@@ -64,29 +64,29 @@ function mapDispatchToProps(dispatch: any) {
   }
 }
 
-class Div extends React.Component{
-  render(){
+interface _Props {
+  add:any;
+  cut:any;
+}
+
+interface _State { }
+
+
+class Div extends React.Component<_Props, _State>{
+  render() {
     // const {add,cut}=this.props;
     console.log(this.props);
-    // let {add,cut}=this.props;
+    let { add, cut } = this.props;
     return (
       <div>
         <CCCC component={componentName} />
-        <button onClick={()=>{}}>按钮+</button>
-        <button onClick={()=>{}}>按钮-</button>
+        <button onClick={add}>按钮+</button>
+        <button onClick={cut}>按钮-</button>
       </div>
     )
   }
 }
-// const Div = () => {
-//   return (
-//     <div>
-//       <CCCC component={componentName} />
-//       <button onClick={()=>{}}>按钮+</button>
-//       <button>按钮-</button>
-//     </div>
-//   )
-// }
+
 
 //实现容器组件，将容器和redux关联，关联state action 组件
 //connect：一个高阶组件
