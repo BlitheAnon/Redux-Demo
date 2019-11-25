@@ -1,3 +1,8 @@
-export interface IProps{
-  component: number[],
+export interface _Props {
+  tiger: any;
+  add: any;
+  cut: any;
+}
+
+export interface _State {
 }
