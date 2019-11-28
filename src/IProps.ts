@@ -4,5 +4,12 @@ export interface _Props {
   cut: any;
 }
 
+export interface _PropsBro {
+  bro: number;
+  broAdd: any;
+  broCut: any;
+}
+
 export interface _State {
+
 }

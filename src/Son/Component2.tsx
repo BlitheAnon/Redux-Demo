@@ -8,13 +8,14 @@ class Component2 extends React.Component<_Props, _State>{
     let { tiger, add, cut } = this.props;
     // let {triger}=this.state;
     // console.log('渲染组件2');
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div style={{ border: '1px solid red' }}>
-        <span>组件2</span>
-        <span>redux参数传递:{tiger}</span>
-        <button onClick={add}>按钮+</button>
-        <button onClick={cut}>按钮-</button>
+        <span>子组件 </span>
+        <span>爷孙传参:{tiger}</span>
+        <br/>
+        <button onClick={add}>爷孙+</button>
+        <button onClick={cut}>爷孙-</button>
       </div>
     )
   }

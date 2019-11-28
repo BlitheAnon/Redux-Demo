@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { Provider, connect } from 'react-redux';
-import {reducer} from './reducer';
+import { Provider } from 'react-redux';
+import {reducerTiger} from './reducer';
 import App from './App';
 
 //store本质上是一个状态树，保存了所有对象的状态
 //创建store
-const store = createStore(reducer);
+const store = createStore(reducerTiger);
 
 console.log('初始state:' + store.getState())
 

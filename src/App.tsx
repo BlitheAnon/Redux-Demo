@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CCCC from './Son/Component1';
+import Component1_ from './Son/Component1_';
 import { _Props, _State } from './IProps';
 import { mapStateToProps, mapDispatchToProps } from './reducer';
 
@@ -12,13 +13,16 @@ class App extends React.Component<_Props, _State>{
     let { add, cut, tiger } = this.props;
     return (
       <div>
+        <h1>redux祖孙，兄弟传值</h1>
         <div style={{ border: '1px solid red' }}>
-          <span>组件App</span>
-          <span>redux参数传递:{tiger}</span>
-          <button onClick={add}>按钮+</button>
-          <button onClick={cut}>按钮-</button>
+          <span>爷组件</span>
+          <span> 爷孙传参:{tiger}</span>
+          <br />
+          <button onClick={add}>爷孙+</button>
+          <button onClick={cut}>爷孙-</button>
+          <CCCC />
+          <Component1_ />
         </div>
-        <CCCC />
       </div>
     )
   }
