@@ -1,7 +1,7 @@
 ## redux demo使用说明
-git clone https://github.com/BlitheAnon/Redux-Demo.git
+git clone https://github.com/BlitheAnon/Redux-Demo.git  
 npm start，启动demo
-
+***
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
